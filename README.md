@@ -65,9 +65,6 @@ In order to get a fair result I filtered the dataset to only include neighbourho
 My findings changed as a result, and the Leather District performed the best as it was the highest rated for 3/7 review scoring categories. 
 
 # 5. Licensing, Authors, Acknowledgements, etc.
-Acknowledgements: Completed as part of a Udacity Nanodegree programme.
-
-License: CC0: Public Domain
-
+Acknowledgements: Completed as part of a Udacity Nanodegree programme, thank you to Udacity for the resources and links to the data.
 Data providers: The datasets are part of Airbnb Inside, and the original sources can be found here: http://insideairbnb.com/get-the-data/.
 
