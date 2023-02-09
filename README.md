@@ -43,6 +43,7 @@ Then I investigated my first question: do Seattle and Boston follow the same pat
 In order to be able to calculate the percentage of properties available, I needed to transform the 'available' column into a true Boolean column. Since data was a critical column in plotting availability I dropped any columns where the date was null. Then I plotted the availability of properties, where data points were given by the percentage available on a given day. 
 The results displayed very similar patterns. The major difference was that Boston saw a big dip in availability around April time which is in line with the date of the Marathon which explains the dip in available properties.  
 
+
 For the second question, 'what is the most popular season for Air BnB rentals?', I first had to convert dates to datetime format in order to extract the month. An issue I discovered at this stage was that running the code for the first question did not plot correctly once date had been converted to datetime. Therefore it is important to run the code in the order it is given. 
 I created a function month_season(date) which takes a date in the format of yyyy-mm-dd, and then returns a season depending on the number of the month. This is the schema for assigning the season: 
 09, 10, 11 = Autumn
@@ -53,9 +54,11 @@ This function was then used to create an additional column in the calendar dataf
 
 Using matplotlib.pyplot.bar() I plotted a bar chart, which displayed the percentage of properties booked for both Seattle and Boston in a side by side comparison. The results showed Autumn to be the most popular season for Boston whereas Spring was the most popular season for Seattle. 
 
+
 Finally I approached the third question, 'whereabouts is the highest ranked neighbourhood in Boston?'.
 In order to investigate this, I created a new dataframe which was a subset of the original bos_list dataframe, containing the neighbourhood and review related columns. I used the pandas .groupby() function alongside .mean() in order to find the mean values for each column, grouped by the neighbourhood. 
 From this stage I then used .iloc to find the neighbourhood correlating to the index of the max score of each review category, which was found using .idxmax(). 
+
 My results showed Brookline to be the highest rated neighbourhood on 5/7 review scoring categories. However I questioned if this data could have been skewed by one or two overwhelmingly positive reviews. 
 I looked into how many reviews there were on average in Brookline, and it was just 0.75. Whereas the overall average was 16.04. 
 In order to get a fair result I filtered the dataset to only include neighbourhoods who had a mean number of reviews of at least 10 or more.
@@ -63,6 +66,8 @@ My findings changed as a result, and the Leather District performed the best as 
 
 # 5. Licensing, Authors, Acknowledgements, etc.
 Acknowledgements: Completed as part of a Udacity Nanodegree programme.
+
 License: CC0: Public Domain
+
 Data providers: The datasets are part of Airbnb Inside, and the original sources can be found here: http://insideairbnb.com/get-the-data/.
 
