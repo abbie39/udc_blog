@@ -1,6 +1,8 @@
 # udc_blog
 Data exploration of Air BnB data in Boston and Seattle. 
 
+Please find the related blog post here: https://medium.com/@abbie.wright1/boston-vs-seattle-the-great-airbnb-show-down-32687159ed4e
+
 # 1. Installations
 
 Libraries installed:
